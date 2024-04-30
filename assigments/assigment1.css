@@ -97,7 +97,7 @@ th {
 .parrafo{
     
     
-    padding: 20px 550px;
+    padding: 20px 580px;
     height: auto;
   
 }
@@ -245,10 +245,17 @@ iframe{
 }
 @media (max-width: 768px) {
     .parrafo{
-        padding: 80px;
+        padding: 20px;
         
     }
-
+    .parrafo h1 {
+        
+       
+        line-height: 45px;
+       
+        
+        
+    }
     .parrafo img {
         width: 100%;
         margin: 10px 10px;
