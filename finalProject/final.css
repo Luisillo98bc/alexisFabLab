@@ -1,0 +1,192 @@
+
+:root{
+    /* --color-principal:  #192733;*/
+     --color-principal: #082835;
+     --color-secundario: #F7F7F7;
+     --color-contraste: #f35b04;
+     --color-contraste2: #7ABDE3;
+     --color-parrafo: black;
+     --color-fondo: #dedbd2;
+     --color-fondo2: #f2e9e4;
+   
+ }
+
+
+ table {
+    
+    border-collapse: collapse;
+}
+th, td {
+    
+    border: 2px solid white; 
+    padding: 8px;
+    text-align: center;
+}
+td {
+    color: white
+}
+th {
+    background-color: #f2f2f2; 
+}
+
+
+
+.table-container {
+    display: flex;
+    color: white;
+    text-align: justify;
+    margin-left: 350px;
+    line-height: 35px;
+    margin-right: 350px;
+    font-size: 15px;
+    color: black;
+}
+
+.encabezado {
+    
+    
+    background:linear-gradient(rgba(5,7,12,0.8), rgba(5,7,12,0.8)), url(./img/WhatsApp\ Image\ 2024-03-24\ at\ 9.58.35\ AM.jpeg);
+    background-position: center center;
+    background-size: cover;
+    height: 50vh;
+    box-sizing:border-box;
+}
+.caratula{
+    
+    height: 100%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.container{
+    display: flex;
+    background-color: var(--color-fondo2);
+}
+.parrafo{
+   
+    padding: 20px 500px;
+    height: auto;
+  
+}
+.parrafo p {
+    color: var(--color-principal);
+    text-align: justify;
+    margin: 5px 0px;
+    line-height: 35px;
+    padding: 8px 20px;
+    font-size: 18px;
+}
+.parrafo h1 {
+    color: var(--color-principal);
+    text-align: left;
+   
+    line-height: 35px;
+    
+    
+    font-weight: bold;
+}
+.parrafo h3 {
+    color: var(--color-principal);
+    text-align: left;
+    line-height: 35px;
+   
+    font-weight: bold;
+}
+.parrafo li {
+    color: var(--color-principal);
+    text-align: left;
+    
+    line-height: 35px;
+    
+}
+.parrafo h4 {
+    color: var(--color-principal);
+    text-align: left;
+    
+    line-height: 35px;
+    
+}
+.formula{
+  
+
+}
+
+.parrafo img {
+    text-align: left;
+    width: 90%;
+    margin: 20px 50px;
+    line-height: 35px;
+    
+    
+    
+}
+
+.video{
+    text-align: left;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+iframe{
+    width: 53%;
+}
+.button-download {
+    color: yellow;
+    /* Otros estilos que desees aplicar */
+}
+@media (max-width: 1800px){
+    .parrafo{
+        padding: 50px 400px;
+        
+    }
+}
+@media (max-width: 1600px){
+    .parrafo{
+        padding: 50px 300px;
+        
+    }
+}
+@media (max-width: 1400px){
+    .parrafo{
+        padding: 50px 200px;
+        
+    }
+}
+@media (max-width: 1200px){
+    .parrafo{
+        padding: 50px 150px;
+        
+    }
+
+    .parrafo img {
+        width: 100%;
+        margin: 10px 10px;
+   
+    }
+
+    iframe{
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .parrafo{
+        padding: 50px;
+        
+    }
+
+    .parrafo img {
+        width: 100%;
+        margin: 10px 10px;
+   
+    }
+
+    iframe{
+        width: 100%;
+    }
+}

@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+:root{
+    /* --color-principal:  #192733;*/
+     --color-principal: #082835;
+     --color-secundario: #F7F7F7;
+     --color-contraste: #f35b04;
+     --color-contraste2: #7ABDE3;
+     --color-parrafo: black;
+     --color-fondo: #dedbd2;
+     --color-fondo2: #f2e9e4;
+   
+ }
+
+ body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+    position: relative;
+}
+a{
+    color: var(--color-secundario);
+    font-size: 22px;
+    text-decoration: none;
+
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+    margin-bottom: 0.5em; /* Ajusta este valor según tus necesidades */
+  }
+
+h1{
+    font-size: 50px;
+    
+    color: var(--color-contraste);
+    
+
+}
+
+h2{
+    font-size: 30px;
+
+    color: var(--color-secundario);
+}
+
+h3{
+    font-size: 25px;
+
+    color: var(--color-principal);
+
+}
+h4{
+    font-size: 20px;
+    color: var(--color-secundario);
+}
+
+h6{
+    font-weight: 700;
+    font-size: 12px;
+    color: var(--color-secundario);
+
+}
+
+p{
+    
+    font-size: 20px;
+    color: var(--color-secundario);
+    
+}
+
+ion-icon{
+    font-size: 35px;
+    color: var(--color-contraste);
+    margin: 0 15px;
+}
+
+.fondo{
+ 
+    background-color: var(--color-principal);
+    background-size: cover;
+    background-position: center;
+}
+
+
+#cabecera{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-principal);
+    padding: 0 5%;
+    height: 90px;
+    cursor: pointer;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  * Opacidad del contenedor para hacerlo translúcido */
+    backdrop-filter: blur(10px);
+}
+#cabecera #links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+#cabecera #links .active{
+    color: var(--color-contraste);
+}
+#cabecera #links a{
+    margin: 0 15px;
+}
+#cabecera #links a:hover{
+    color: var(--color-contraste);
+}
+#cabecera img{
+    width: 180px;
+    height: auto;
+    
+}
+#cabecera #links #cerrar{
+    display: none;
+}
+
+#cabecera .mobile{
+    display: none;
+}
+
+#encabezado{
+    
+    background:linear-gradient(rgba(5,10,10,0.70), rgba(5,10,10,0)), url(img/portada.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    padding: 0 80px;
+   
+    
+}
+#encabezado .caratula{
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+#separador1{
+    height: 250px;
+    padding: 10px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E8E8E8;
+}
+#separador1 .division{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+    
+
+.separador p{
+    color: var(--color-parrafo);
+}
+
+
+.portafolio{
+    background-color: #E8E8E8;
+    padding: 10px 90px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); /* Columnas autoajustables */
+    grid-gap: 30px; /* Espacio entre celdas */
+}
+
+.portafolio .post{
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+   
+    border-radius: 10px;
+    
+
+}
+.portafolio .post:hover{
+    box-shadow: 0 4px 20px rgba(83, 75, 75, 0.1);
+}
+.portafolio .post .contenedor-imagenes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    
+}
+.portafolio .post .contenedor-imagenes h2{
+    color: var(--color-contraste);
+}
+.portafolio .post .contenedor-imagenes p{
+    color: var(--color-principal);
+}
+
+.contenedor-imagenes .imagen{
+    position: relative;  
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     
+}
+
+.portafolio .post .contenedor-imagenes .imagen img{
+    width: 95%;
+    
+    
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.overlay{
+    position: absolute;
+    bottom:0;
+    left: 0;
+   
+    background-color: #0c0c0cbd;
+    width: 100%;
+    height: 0;
+    transition: .75s ease;
+    overflow: hidden;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.overlay a{
+    text-decoration: none;
+}
+.overlay h2{
+    text-align: center;
+    font-weight: 600;
+    color: var(--color-secundario);
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    
+}
+.imagen:hover .overlay{
+    height: 100%;
+    cursor: pointer;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.anuncios{
+    height: 350px;
+    width: 100%;
+    background-color: var(--color-principal);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.anuncios .redes .logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+    
+}
+.anuncios .redes .logos ion-icon{
+    color: var(--color-fondo2);
+    transition: 0.2s;
+}
+.anuncios .redes .logos ion-icon:hover{
+    color: var(--color-contraste);
+}
+
+
+
+.anuncios p{
+    color: #687078;
+}
+#btn-scroll-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--color-fondo2);
+    color:#f0ece4;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 100px;
+}
+
+#btn-scroll-top:hover{
+    transform: scale(1.2);
+    
+}
+
+@media (max-width: 1200px){
+    .portafolio{
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    }
+}
+
+@media (max-width: 768px){
+    
+    #cabecera #links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        position: absolute;
+        left: -300px;
+        top: 0px;
+        width: 300px;
+        height: 100vh;
+        background-color: #E3E6F3;
+        padding-top: 80px;
+       
+        
+       
+    }
+    #cabecera #links.active{
+        left: 0px;
+
+    }
+    #cabecera #links a{
+        margin: 15px 0;
+        border-bottom: 2px solid var(--color-contraste);
+        color: #082835;
+        font-weight: 600;
+    }
+    #cabecera #links #cerrar{
+        display: flex;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        border-radius: 50%;
+        padding: 5px;
+        
+    }
+    #cabecera .mobile{
+        display: flex;
+    }
+    .portafolio{
+        padding: 50px 35px;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+}
