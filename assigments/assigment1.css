@@ -1,0 +1,272 @@
+
+:root{
+    /* --color-principal:  #192733;*/
+     --color-principal: #082835;
+     --color-secundario: #F7F7F7;
+     --color-contraste: #f35b04;
+     --color-contraste2: #7ABDE3;
+     --color-parrafo: black;
+     --color-fondo: #dedbd2;
+     --color-fondo2: #f2e9e4;
+   
+ }
+
+
+ table {
+    width: auto;
+    border-collapse: collapse;
+}
+th, td {
+    
+    border: 2px solid white; 
+    padding: 5px;
+    text-align: center;
+}
+td {
+    color: var(--color-principal);
+    background-color: #f2f2f2; 
+    
+    
+}
+th {
+    background-color: var(--color-fondo);
+    
+    width: 150px;
+}
+
+
+
+.table-container {
+    display: flex;
+    color: white;
+    text-align: center;
+    align-items: center;
+    
+    line-height: 35px;
+    
+    font-size: 15px;
+    color: black;
+}
+.table-container img{
+    width: auto;
+    height: auto;
+    
+}
+.encabezado {
+    width: 100%;
+    
+    background:linear-gradient(rgba(5,7,12,0.8), rgba(5,7,12,0.8)), url(img/Assignment\ 1.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    min-height: 50vh;
+    box-sizing:border-box;
+}
+.caratula{
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    
+}
+.caratula h1{
+    color: white;
+    font-size: 70px;
+    padding-top: 80px;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 0px;
+    transition: 0.2s;
+}
+.caratula h1:hover{
+    color: var(--color-contraste);
+}
+.caratula h2{
+    color: white;
+    font-size: 25px;
+    margin-top: -10px;
+    font-weight:normal;
+    box-sizing: border-box;
+    text-align: center;
+    margin-right: 0px;   
+}
+/*=========================================================================================00*/
+.container{
+    display: flex;
+    background-color: var(--color-fondo2);
+}
+.parrafo{
+    
+    
+    padding: 20px 550px;
+    height: auto;
+  
+}
+.parrafo p {
+    color: var(--color-principal);
+    text-align: justify;
+    line-height: 30px;
+    padding: 8px 20px;
+    font-size: 19px;
+}
+.parrafo h1 {
+    color: var(--color-principal);
+    text-align: left;
+   
+    line-height: 30px;
+    padding-top: 15px;
+    
+    font-weight: bold;
+}
+.parrafo h3 {
+    color: var(--color-principal);
+    text-align: left;
+    line-height: 30px;
+   
+    font-weight: bold;
+}
+.parrafo li {
+    color: var(--color-principal);
+    text-align: left;
+    font-size: 19px;
+    line-height: 30px;
+    
+}
+.parrafo h4 {
+    color: var(--color-principal);
+    text-align: left;
+    
+    line-height: 35px;
+    
+}
+
+.parrafo img {
+    text-align: left;
+    width: 90%;
+    margin: 20px 50px;
+    line-height: 35px;
+    
+    
+    
+}
+
+.video{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    justify-content: center;
+    
+}
+
+iframe{
+    
+    
+    margin: auto;
+}
+/*=========================================================================================00*/
+
+
+
+
+
+
+
+.container-navigation-button {
+    display: flex;
+    justify-content: space-around; 
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+    
+ 
+}
+.btn-go {
+    background-color: var(--color-secundario);
+    border-radius: 20px;
+    color: var(--color-principal);
+    border: none; 
+    padding: 10px 20px;
+    font-size: 25px; 
+    cursor: pointer;
+    font-weight: 500; 
+}
+.btn-go:hover {
+    color: var(--color-contraste);
+    
+}
+.button-download {
+    background-color: ;
+    color: var(--color-contraste);
+    padding: 5px;
+    border-radius: 10px;
+    
+    background-color: var(--color-fondo);
+    transition: 0.2s;
+    /* Otros estilos que desees aplicar */
+}
+
+.button-download:hover{
+    background-color: var(--color-principal);
+}
+
+@media (max-width: 1800px){
+    .parrafo{
+        padding: 50px 400px;
+        
+    }
+}
+@media (max-width: 1600px){
+    .parrafo{
+        padding: 50px 300px;
+        
+    }
+}
+@media (max-width: 1400px){
+    .parrafo{
+        padding: 50px 200px;
+        
+    }
+}
+@media (max-width: 1200px){
+    .parrafo{
+        padding: 50px 150px;
+        
+    }
+
+    .parrafo img {
+        width: 100%;
+        margin: 10px 10px;
+   
+    }
+
+    iframe{
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .parrafo{
+        padding: 80px;
+        
+    }
+
+    .parrafo img {
+        width: 100%;
+        margin: 10px 10px;
+   
+    }
+
+    iframe{
+        width: 100%;
+    }
+    .table-container {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        align-items: center;
+        
+        line-height: 35px;
+        
+        font-size: 15px;
+        color: black;
+    }
+}
