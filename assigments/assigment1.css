@@ -108,6 +108,18 @@ th {
     padding: 8px 20px;
     font-size: 19px;
 }
+
+.parrafo p a{
+    color: #21ade4;
+    
+    transition: 0.2s;
+    
+
+}
+.parrafo p a:hover{
+    color: var(--color-contraste);
+    
+}
 .parrafo h1 {
     color: var(--color-principal);
     text-align: left;
@@ -115,6 +127,13 @@ th {
     line-height: 30px;
     padding-top: 15px;
     
+    font-weight: bold;
+}
+.parrafo h2 {
+    color: var(--color-principal);
+    text-align: left;
+    line-height: 40px;
+   
     font-weight: bold;
 }
 .parrafo h3 {

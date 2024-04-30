@@ -53,175 +53,91 @@
         <div class="parrafo">
             <br />
             
-            <h1><strong>Welcome to Week 12</strong></h1>
-            <h3><strong>Molding and casting</strong></h3>
+            <h1><strong>Welcome to Week 13</strong></h1>
+            <h3><strong>Embedded Networking and Communications</strong></h3>
 
             <p>
-                Hey! now we will learn about Molding and Casting, for this week we have the following group and individual assignments:
+                Hey! now we will learn about Embedded Networking and Communications, for this week we have the following group and individual assignments:
             </p>
 
             <ul>
                 <li>Group assignment:</li>
-                    <p>o	Review the safety data sheets for each of your molding and casting materials -   Done</p>
-                    <p>o	Make and compare test casts with each of them -   Done</p>
-                    <p>o	Compare printing vs milling molds -   Done</p>
+                    <p>o	Send a message between two projects/p>
+                    <p>o	Document your work to the group work page and reflect on your individual page what you learned</p>
                    
                 <li>Individual assignment:</li>
-                    <p>o	Design a mold around the process you'll be using, produce it with a smooth surface finish, and use it to cast parts. -   Done</p>
+                    <p>o	Design, build and connect wired or wireless node(s) with network or bus addresses and a local interface.</p>
             </ul>
             <h2>GROUP ASSIGNMENT</h2>
            
-           <p>Let's start with the group assignment by reviewing the safety sheets of our materials.</p>
-           <h3>Silicon Peru, Y-805a</h3>
-            <p>The following silicone consists of 2 parts, a white liquid which is the silicone and the curing agent. Curing time is 4 to 8 hours. It has good tear resistance and excellent temperature resistance, in addition to being dyed in the natural color of the skin.</p>
-            <div class="table-container">
-                <table>
-                  <tr>
-                    <th>CARACTERISTIC</th>
-                    <th>INSPECTION METHOD</th>
-                    <th>VALUE</th>
-                  </tr>
-                  <tr>
-                    <td>MIX RATIO</td>
-                    <td>A:B</td>
-                    <td>100:100</td>
-                  </tr>
-                  <tr>
-                    <td>COLOR</td>
-                    <td>---</td>
-                    <td>skin color</td>
-                  </tr>
-                  <tr>
-                    <td>POT LIFE</td>
-                    <td>30°C</td>
-                    <td>40-50 mins</td>
-                  </tr>
-                  <tr>
-                    <td>Demold time	</td>
-                    <td>30° C</td>
-                    <td>4-5h</td>
-                  </tr>
-                  
-                </table>
-              </div> 
-            <p>Upon reviewing the technical specifications, we commence utilizing the material and blending it in accordance with the provided characteristics and values. We've included a photograph of the process and it's essential to adhere to personal protective equipment guidelines as they are mandatory for handling this material.</p>
-            <img src="../assigments/img-12/img1.jpg" width="700" />
-            <p>Then we started thinking to get the right ratio of silicone A to B based on the data sheets.</p>
-            <img src="../assigments/img-12/img2.jpg" width="700" height="auto" />
-            <img src="../assigments/img-12/img3.jpg" width="700" height="auto" />
-            <p>After combining both materials, we begin to move the mixture to obtain a uniform liquid to obtain the result of the silicone test.</p>
-            <img src="../assigments/img-12/img4.jpg" width="700" height="auto" />
-            <p>Finally, after waiting for about 4 hours, we were able to get the sample result, It turned out well</p>
-            <img src="../assigments/img-12/img5.jpg" width="700" height="auto" />
-            <p>well let's continue with the next material….</p>
+           <p>For the group assignment we will begin by sending information from one Seed Xiao rp2040 shield to another, for this we will use our inserts developed in week 4.</p>
+           <img src="../assigments/img-13/img1.jpg" width="700" />
+           <p>We will use an ultrasound sensor, as well as a type of I2C communication, which will send information to the second shield and a small buzzer that will execute the function of emitting a sound every time the minimum programmed distance is exceeded.</p>
+            <p> <strong>Let's know a little about I2C communication….</strong></p>
+            <p>The I2C protocol, or Inter-Integrated Circuit, is a serial communication protocol used to connect multiple devices to a microcontroller.</p>
+            <p>The operation of I2C is based on Primary-Secondary (master-slave) communication. The microcontroller acts as a master, controlling data flow to attached secondary (slave) devices. Each secondary (slave) device has a unique address assigned, allowing the primary (master) to select which device it wishes to communicate with.</p>
+            <p>When I2C communication is initiated, the primary (master) sends a start signal, followed by the address of the secondary (slave) device it wishes to query. Then the data is transmitted, usually in bytes, between the primary (master) and the secondary (slave). The primary (master) generates clock signals to synchronize the transmission.</p>
+            <img src="../assigments/img-13/img2.jpg" width="700" />
+            <p>In the shields that we will use this I2C connection we place them at the bottom, for the Primary plate, the bus address is not mandatory. </p>
+            <p>Well let's start the master's programming</p>
+            <img src="../assigments/img-13/img3.png" width="700" />
+            <p>I will leave the code in .ino at the end of this assignment, having the master ready let's go about programming the slave</p>
+            <img src="../assigments/img-13/img4.png" width="700" />
+            <p>Great, we now have both codes, within this interaction and sending of messages we will manage a simple logic, the ultrasound will give us the readings and if it is less than 20cm it will give the order to emit a beep on the buzzer</p>
+            <p>Here we can see how both shields are connected through I2C and each one with its elements already described above.</p>
+            <img src="../assigments/img-13/img5.jpg" width="700" />
+            <p>We upload the programming to both shields and observe how the readings occur whether sent or received.</p>
+            <img src="../assigments/img-13/img6.png" width="700" />
+            <p>Here I will leave you a small video about how this exercise works….</p>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KyrIO-R8LTs?si=ncP6uGx_JmDeoUlt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <p>There are various methods of connection and interaction between shields, one of the most economical because you only have to have cables is the I2C, we also have a connection by Bluetooth and by network, I will leave you with all the necessary files so that you can also experiment with this type of communication and generate communication networks between slaves and master</p>
+            <p>Well now let's start with the individual assignment, I'm sure we will come up with something great</p>
             
-            <h3>Silikast Epoxy Craft</h3>
-            <img src="../assigments/img-12/img6.jpg" width="700" height="auto" />
-            <p>The following epoxy resin consists of 2 parts, a white liquid that is the resin and the curing agent. Curing time is 12 to 16 hours. It has good tear resistance and excellent temperature resistance.</p>
-            
-            <div class="table-container">
-                <table>
-                  <tr>
-                    <th>CARACTERISTIC</th>
-                    <th>INSPECTION METHOD</th>
-                    <th>VALUE</th>
-                  </tr>
-                  <tr>
-                    <td>MIX RATIO</td>
-                    <td>A:B</td>
-                    <td>1:1</td>
-                  </tr>
-                  <tr>
-                    <td>COLOR</td>
-                    <td>---</td>
-                    <td>Transparent</td>
-                  </tr>
-                  <tr>
-                    <td>POT LIFE</td>
-                    <td>30°C</td>
-                    <td>40-50 mins</td>
-                  </tr>
-                  <tr>
-                    <td>Demold time	</td>
-                    <td>30° C</td>
-                    <td>12-16h</td>
-                  </tr>
-                  
-                </table>
-            </div> 
-            <p>Upon reviewing the technical specifications, we commence utilizing the material and blending it in accordance with the provided characteristics and values. We've included a photograph of the process and it's essential to adhere to personal protective equipment guidelines as they are mandatory for handling this material</p>
-            <img src="../assigments/img-12/img7.jpg" width="700" height="auto" />
-            <p>Then we started thinking to get the right ratio of silika A to B based on the data sheets.</p>
-            <img src="../assigments/img-12/img8.jpg" width="700" height="auto" />
-            <img src="../assigments/img-12/img9.jpg" width="700" height="auto" />
-            <p>After combining both materials, we begin to move the mixture to obtain a uniform liquid to obtain the result of the silicone test.</p>
-            <img src="../assigments/img-12/img10.jpg" width="700" height="auto" />
-            <p>Finally, after waiting for about 12 hours, we were able to get the sample result, It turned out well</p>
-            <img src="../assigments/img-12/img11.jpg" width="700" height="auto" />
-            <p>Well, now let's make a comparison between a 3D printing mold and a CNC milling one, For this exercise we will use a file from the THINGUIVERSE repository, which I leave the link <a href="https://www.thingiverse.com/thing:36869">here</a></p>
-            <p>Let's start by making the 3D printing of our mold, for this we will take our model to the CURA, let's start!</p>
-            <p>Here we have part in 3D print</p>
-            <img src="../assigments/img-12/img12.png" width="700" height="auto" />
-            <p>I start the printing process!....</p>
-            <img src="../assigments/img-12/img13.jpg" width="700" height="auto" />
-            <p>Well now we have it ready</p>
-            <img src="../assigments/img-12/img14.jpg" width="700" height="auto" />
-            <p>Now let's prepare the silicone mixture to test how the mold turned out and wait patiently for it to dry.</p>
-            <img src="../assigments/img-12/img15.jpg" width="700" height="auto" />
-            <p>While we wait, let's move forward with the machining of this solid to be able to compare the results.</p>
-            <p>For this process we will use the MODS CE and the machine to use will be the shopbot, let's get to work, first let's enter the solid.</p>
-            <img src="../assigments/img-12/img16.png" width="700" height="auto" />
-            <img src="../assigments/img-12/img17.png" width="700" height="auto" />
-            <p>then we configure the size of the drill bit in this case we will use a 1/8</p>
-            <img src="../assigments/img-12/img18.png" width="700" height="auto" />
-            <p>And we calculate:</p>
-            <img src="../assigments/img-12/img19.png" width="700" height="auto" />
-            <p>Ok now calibrate the bed height in the shopbot to start machining…</p>
-            <img src="../assigments/img-12/img20.jpg" width="700" height="auto" />
-            <p>Let's start with the machining of our solid</p>
-            <img src="../assigments/img-12/img21.jpg" width="700" height="auto" />
-            <p>We wait a little and that's it, we have our piece ready.</p>
-            <img src="../assigments/img-12/img22.jpg" width="700" height="auto" />
-            <p>Now let's prepare the mixture and see the results…</p>
-            <img src="../assigments/img-12/img23.jpg" width="700" height="auto" />
-            <p>Let's wait for both tests to dry, they look very good..</p>
-            <img src="../assigments/img-12/img24.jpg" width="700" height="auto" />
-            <p>Once dry, let's take out the pieces, the one on the right side is from the 3D printing and the left side is from the CNC cutting.</p>
-            <img src="../assigments/img-12/img25.jpg" width="700" height="auto" />
-            <img src="../assigments/img-12/img26.jpg" width="700" height="auto" />
-            <p>We can well see that there is a greater amount of detail in the 3D printing mold, and being more practical also offers us better casting quality.</p>
-            <h3>INDIVIDUAL ASSIGNMENT</h3>
-            <p>For the individual assignment we will begin by designing the solid that we want to replicate, a gear that will be cast with part A and part B.</p>
-            <p>We will use the AutoCAD program for the design, we start by drawing the gear and then do the extrusion.</p>
-            <img src="../assigments/img-12/img27.jpg" width="700" height="auto" />
-            <img src="../assigments/img-12/img28.jpg" width="700" height="auto" />
-            <p>Now we extrude the central part so we can select that area</p>
-            <img src="../assigments/img-12/img29.jpg" width="700" height="auto" />
-            <p>And ready we have our gear..</p>
-            <img src="../assigments/img-12/img30.jpg" width="700" height="auto" />
-            <p>Well now we can build our negatives so we draw a square a little bigger than the gear and we will extrude it</p>
-            <img src="../assigments/img-12/img31.jpg" width="700" height="auto" />
-            <img src="../assigments/img-12/img32.jpg" width="700" height="auto" />
-            <p>We will make a hole to pour the silicone into both parts</p>
-            <img src="../assigments/img-12/img33.jpg" width="700" height="auto" />
-            <p>Okay now let's take out our negatives A and B</p>
-            <img src="../assigments/img-12/img34.jpg" width="700" height="auto" />
-            <img src="../assigments/img-12/img35.jpg" width="700" height="auto" />
-            <p>Let's take our solids to the 3D printer, so we can make our solid replication..</p>
-            <img src="../assigments/img-12/img36.png" width="700" height="auto" />
-            <p>Ready now we have our negatives!!!!</p>
-            <img src="../assigments/img-12/img37.jpg" width="700" height="auto" />
-            <p>Now let's mix our silicone so we can melt it in our mold.</p>
-            <img src="../assigments/img-12/img38.jpg" width="700" height="auto" />
-            <img src="../assigments/img-12/img39.jpg" width="700" height="auto" />
-            <p>Brilliant! We have it ready, now we pour the mixture into our mold</p>
-            <img src="../assigments/img-12/img40.jpg" width="700" height="auto" />
-            <p>Finally we waited a little, and that's it! We already have our cast piece, it looked great!</p>
-            <img src="../assigments/img-12/img41.jpg" width="700" height="auto" />
-            <p>And the result is…</p>
-            <img src="../assigments/img-12/img42.jpg" width="700" height="auto" />
-            <p>If you want to replicate any of these experiments, I leave you here all the documents so you can achieve it.</p>
+            <h2>INDIVIDUAL ASSIGNMENT</h2>
+            <p>For my individual order, I plan to make a lamp that can be controlled through a Wi-Fi network. For this, I will use an already designed STL and make modifications to it to be able to place my control and power supply system. Here is the reference  <a href="https://www.thingiverse.com/thing:3066439">link</a></p>
+            <p>Let's pass the pieces to the priest so we can start printing</p>
 
+            <img src="../assigments/img-13/img7.png" width="700" />
+            <p>And.... let's start with the impression!</p>
+            <img src="../assigments/img-13/img8.jpg" width="700" />
+            <p>Well now I will make a simple design of a box to have the control system and the power supply there, We will use a simple to use web program in which you enter the measurements and it automatically generates the plans of the box.0</p>
+            <img src="../assigments/img-13/img9.png" width="700" />
+            <p>Here I leave you the link so you can experiment, now we will make some fittings for the switches and let's cut!</p>
+            <img src="../assigments/img-13/img10.png" width="700" />
+            <p>We now have the cuts ready, we will assemble the control box</p>
+            <img src="../assigments/img-13/img11.jpg" width="700" />
+            <p>Having the impressions, we proceed to assemble and place the LED strip</p>
+            <img src="../assigments/img-13/img12.jpg" width="700" />
+            <p>Well now let's make the connections with our control box</p>
+            <img src="../assigments/img-13/img13.jpg" width="700" />
+            <p>Let's start with the programming, we will use the Arduino IDE to establish a connection with the Esp32</p>
+            <img src="../assigments/img-13/img14.jpg" width="700" />
+            <p>We create the website, in HTML to generate the local interface through a wireless connection</p>
+            <img src="../assigments/img-13/img15.jpg" width="700" />
+            <p>In order to upload it to the esp32 we will have to compress the website for which we will use a compression program, I leave it  <a href="https://kangax.github.io/html-minifier/ ">here</a></p>
+            <img src="../assigments/img-13/img16.jpg" width="700" />
+            <p>As you can see, an optimization of 18% was achieved, Well now we load the esp32..</p>
+            <img src="../assigments/img-13/img17.jpg" width="700" />
+            <p>When loading it, it gives us the IP of the server: 192.168.164.214 , We enter the IP from the mobile and confirm the correct display of the interface.</p>
+            <img src="../assigments/img-13/img18.jpg" width="700" />
+            <p>Well, now let's program the LED to turn on according to the interface and let's start the tests.</p>
+            <img src="../assigments/img-13/img19.png" width="700" />
+            <p>Here in data.h we configure the network to which we want it to connect and place the compressed website so that it starts every time the esp32 is turned on</p>
+            <img src="../assigments/img-13/img20.png" width="700" />
+            <p>In the general sketch we declare the variables, we also configure the program's response to each signal that the page sends us, such as on, off and changing colors.</p>
+            <p>Well, we have everything ready, here is a video of how it works…….</p>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/SmOPLlRP5tY?si=2VC0qzHgQuFGfVRP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <p>It turned out great, I leave all the files of this adventure here so you can replicate it.</p>
+            <li>
+                <a class="button-download" target="_blank" href="./Archivos (13).zip">
+                    Download Here
+                </a>
+            </li>
+            
             <p>See you next Week.</p>
         
         </div>
