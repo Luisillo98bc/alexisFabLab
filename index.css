@@ -169,6 +169,7 @@ ion-icon{
 
 .separador p{
     color: var(--color-parrafo);
+    text-align: center;
 }
 
 
@@ -190,7 +191,7 @@ ion-icon{
 
 }
 .portafolio .post:hover{
-    box-shadow: 0 4px 20px rgba(83, 75, 75, 0.1);
+    box-shadow: 0 4px 20px rgba(86, 69, 69, 0.1);
 }
 .portafolio .post .contenedor-imagenes{
     display: flex;
@@ -216,7 +217,7 @@ ion-icon{
 }
 
 .portafolio .post .contenedor-imagenes .imagen img{
-    width: 95%;
+    width: 100%;
     
     
     border-bottom-right-radius: 10px;
@@ -355,7 +356,7 @@ ion-icon{
         display: flex;
     }
     .portafolio{
-        padding: 50px 35px;
+        padding: 10px 20px;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
 
