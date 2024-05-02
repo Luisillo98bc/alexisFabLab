@@ -177,7 +177,7 @@ ion-icon{
 
 .portafolio{
     /*background-color: #E8E8E8;*/
-    background-color: var(--color-secundario);
+    background-color: #070e15;
     padding: 50px 360px;
     height: auto;
     display: grid;
