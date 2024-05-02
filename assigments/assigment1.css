@@ -8,6 +8,7 @@
      --color-parrafo: black;
      --color-fondo: #dedbd2;
      --color-fondo2: #f2e9e4;
+     --color-portafolio: #212529;
    
  }
 
@@ -90,13 +91,10 @@ th {
     margin-right: 0px;   
 }
 /*=========================================================================================00*/
-.container{
-    display: flex;
-    background-color: var(--color-fondo2);
-}
+
 .parrafo{
     
-    
+    background-color: var(--color);
     padding: 20px 580px;
     height: auto;
   
@@ -179,15 +177,8 @@ th {
 
 iframe{
     
-    
     margin: auto;
 }
-/*=========================================================================================00*/
-
-
-
-
-
 
 
 .container-navigation-button {
@@ -214,7 +205,7 @@ iframe{
     
 }
 .button-download {
-    background-color: ;
+    
     color: var(--color-contraste);
     padding: 5px;
     border-radius: 10px;

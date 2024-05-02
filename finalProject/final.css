@@ -83,10 +83,8 @@ th {
 .parrafo h1 {
     color: var(--color-principal);
     text-align: left;
-   
     line-height: 35px;
-    
-    
+
     font-weight: bold;
 }
 .parrafo h3 {
@@ -109,10 +107,6 @@ th {
     
     line-height: 35px;
     
-}
-.formula{
-  
-
 }
 
 .parrafo img {
@@ -176,7 +170,7 @@ iframe{
 }
 @media (max-width: 768px) {
     .parrafo{
-        padding: 20px;
+        padding: 25px;
         
     }
     .parrafo h1 { 

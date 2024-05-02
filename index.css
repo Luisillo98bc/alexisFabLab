@@ -5,11 +5,14 @@
     /* --color-principal:  #192733;*/
      --color-principal: #082835;
      --color-secundario: #F7F7F7;
+     
+     --color-contraste: #E63946;
      --color-contraste: #f35b04;
      --color-contraste2: #7ABDE3;
      --color-parrafo: black;
      --color-fondo: #dedbd2;
      --color-fondo2: #f2e9e4;
+     --color-portafolio: #212529;
    
  }
 
@@ -96,7 +99,6 @@ ion-icon{
     top: 0;
     left: 0;
     z-index: 1;
-  * Opacidad del contenedor para hacerlo translúcido */
     backdrop-filter: blur(10px);
 }
 #cabecera #links{
@@ -174,18 +176,19 @@ ion-icon{
 
 
 .portafolio{
-    background-color: #E8E8E8;
-    padding: 10px 90px;
+    /*background-color: #E8E8E8;*/
+    background-color: var(--color-secundario);
+    padding: 50px 360px;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); /* Columnas autoajustables */
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Columnas autoajustables */
     grid-gap: 30px; /* Espacio entre celdas */
 }
 
 .portafolio .post{
     background-color: #FFFFFF;
     box-sizing: border-box;
-   
+    
     border-radius: 10px;
     
 
@@ -218,7 +221,7 @@ ion-icon{
 
 .portafolio .post .contenedor-imagenes .imagen img{
     width: 100%;
-    
+    height: 400px;
     
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -309,9 +312,49 @@ ion-icon{
     
 }
 
+
+@media (max-width: 1850px){
+    .portafolio{
+        padding: 50px 300px;
+       
+    }
+}
+@media (max-width: 1700px){
+    .portafolio{
+        padding: 50px 270px;
+        grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    }
+}
+@media (max-width: 1600px){
+    .portafolio{
+        padding: 50px 280px;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+@media (max-width: 1400px){
+    .portafolio{
+        padding: 50px 240px;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
 @media (max-width: 1200px){
     .portafolio{
-        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        padding: 50px 150px;
+        grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    }
+}
+@media (max-width: 1024px){
+    .portafolio{
+        padding: 50px 100px;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        
+    }
+}
+@media (max-width: 900px){
+    .portafolio{
+        padding: 50px 50px;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        
     }
 }
 
@@ -356,8 +399,8 @@ ion-icon{
         display: flex;
     }
     .portafolio{
-        padding: 10px 20px;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        padding: 10px 25px;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     }
 
 }
