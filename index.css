@@ -11,10 +11,12 @@
      --color-contraste2: #7ABDE3;
      --color-parrafo: black;
      --color-fondo: #dedbd2;
-     --color-fondo2: #f2e9e4;
+     --color-fondo2: ##E8E8E8;
      --color-portafolio: #212529;
-   
+     --color-1:#070e15;
+
  }
+ 
 
  body{
     margin: 0;
@@ -177,12 +179,13 @@ ion-icon{
 
 .portafolio{
     /*background-color: #E8E8E8;*/
-    background-color: #070e15;
+    background-color: #E8E8E8;
     padding: 50px 360px;
     height: auto;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Columnas autoajustables */
     grid-gap: 30px; /* Espacio entre celdas */
+    
 }
 
 .portafolio .post{
@@ -194,7 +197,8 @@ ion-icon{
 
 }
 .portafolio .post:hover{
-    box-shadow: 0 4px 20px rgba(86, 69, 69, 0.1);
+    /*box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.9);*/
+    box-shadow: 0px 0px 10px  rgba(0, 0, 0, 0.8);
 }
 .portafolio .post .contenedor-imagenes{
     display: flex;
