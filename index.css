@@ -15,9 +15,11 @@
      --color-portafolio: #212529;
      --color-1:#070e15;
 
- }
+ }#151515
  
-
+*{
+    
+}
  body{
     margin: 0;
     padding: 0;
@@ -179,12 +181,14 @@ ion-icon{
 
 .portafolio{
     /*background-color: #E8E8E8;*/
+    box-sizing: border-box;
+    width: 100%;
     background-color: #E8E8E8;
-    padding: 50px 360px;
+    padding: 50px 350px;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Columnas autoajustables */
-    grid-gap: 30px; /* Espacio entre celdas */
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); /* Columnas autoajustables */
+    grid-gap: 15px; /* Espacio entre celdas */
     
 }
 
@@ -212,6 +216,7 @@ ion-icon{
 }
 .portafolio .post .contenedor-imagenes p{
     color: var(--color-principal);
+    text-align: center;
 }
 
 .contenedor-imagenes .imagen{
@@ -225,7 +230,7 @@ ion-icon{
 
 .portafolio .post .contenedor-imagenes .imagen img{
     width: 100%;
-    height: 460px;
+    height: auto;
     
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -309,15 +314,28 @@ ion-icon{
     font-size: 20px;
     cursor: pointer;
     margin-right: 100px;
+    transition: 0.2s;
 }
 
 #btn-scroll-top:hover{
     transform: scale(1.2);
+    background-color: #070e15;
+    
+}
+.portafolio{
+    /*background-color: #E8E8E8;*/
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #E8E8E8;
+    padding: 50px 330px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); /* Columnas autoajustables */
+    grid-gap: 30px; /* Espacio entre celdas */
     
 }
 
-
-@media (max-width: 1850px){
+@media (max-width: 1800px){
     .portafolio{
         padding: 50px 300px;
        
@@ -325,41 +343,65 @@ ion-icon{
 }
 @media (max-width: 1700px){
     .portafolio{
-        padding: 50px 270px;
-        grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+        padding: 50px 250px;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     }
 }
 @media (max-width: 1600px){
     .portafolio{
-        padding: 50px 280px;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        padding: 50px 200px;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+    #btn-scroll-top {
+       
+        margin-right: 30px;
     }
 }
 @media (max-width: 1400px){
     .portafolio{
-        padding: 50px 240px;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        padding: 50px 150px;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     }
+    #btn-scroll-top {
+       
+        margin-right: 20px;
+    }
+
 }
 @media (max-width: 1200px){
     .portafolio{
-        padding: 50px 150px;
-        grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+        padding: 50px 80px;
+        grid-template-columns: repeat(auto-fill, minmax(234px, 1fr));
     }
+    #btn-scroll-top {
+       
+        margin-right: 5px;
+    }
+
 }
 @media (max-width: 1024px){
     .portafolio{
-        padding: 50px 100px;
-        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        padding: 50px 45px;
+        grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
         
     }
+    #btn-scroll-top {
+       
+        margin-right: 10px;
+    }
+
 }
 @media (max-width: 900px){
     .portafolio{
-        padding: 50px 50px;
+        padding: 40px 40px;
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        
+        grid-gap: 12px; 
     }
+    #btn-scroll-top {
+       
+        margin-right: 10px;
+    }
+
 }
 
 @media (max-width: 768px){
@@ -404,7 +446,19 @@ ion-icon{
     }
     .portafolio{
         padding: 10px 25px;
-        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-gap: 18px; 
+    }
+    #btn-scroll-top {
+       
+        margin-right: 10px;
+    }
+
+}
+@media (max-width: 550px){
+    .portafolio{
+        padding: 10px 30px;
+        grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
     }
 
 }
