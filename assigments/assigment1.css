@@ -63,6 +63,125 @@ th {
     min-height: 50vh;
     box-sizing:border-box;
 }
+.as2{
+    background:linear-gradient(rgba(5,7,12,0.8), rgba(5,7,12,0.8)), url(img/Assignment\ 2.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+.as3{
+    background:linear-gradient(rgba(5,7,12,0.8), rgba(5,7,12,0.8)), url(img/Assignment\ 3.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+.as4{
+    background:linear-gradient(rgba(5,7,12,0.8), rgba(5,7,12,0.8)), url(img/Assignment\ 4.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+.as4{
+    background:linear-gradient(rgba(5,7,12,0.8), rgba(5,7,12,0.8)), url(img/Assignment\ 5.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+.as6{
+    background:linear-gradient(rgba(5,7,12,0.8), rgba(5,7,12,0.8)), url(img/Assignment\ 6.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+.as7{
+    background:linear-gradient(rgba(5,7,12,0.8), rgba(5,7,12,0.8)), url(img/Assignment\ 7.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+.as8{
+    background:linear-gradient(rgba(5,7,12,0.8), rgba(5,7,12,0.8)), url(img/Assignment\ 8.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+.as9{
+    background:linear-gradient(rgba(5,7,12,0.8), rgba(5,7,12,0.8)), url(img/Assignment\ 9.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+.as10{
+    background:linear-gradient(rgba(5,7,12,0.8), rgba(5,7,12,0.8)), url(img/Assignment\ 10.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+.as11{
+    background:linear-gradient(rgba(5,7,12,0.8), rgba(5,7,12,0.8)), url(img/Assignment\ 11.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+.as12{
+    background:linear-gradient(rgba(5,7,12,0.8), rgba(5,7,12,0.8)), url(img/Assignment\ 12.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+.as13{
+    background:linear-gradient(rgba(5,7,12,0.8), rgba(5,7,12,0.8)), url(img/Assignment\ 13.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+.as13{
+    background:linear-gradient(rgba(5,7,12,0.8), rgba(5,7,12,0.8)), url(img/Assignment\ 14.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+.as15{
+    background:linear-gradient(rgba(5,7,12,0.8), rgba(5,7,12,0.8)), url(img/Assignment\ 15.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+.as16{
+    background:linear-gradient(rgba(5,7,12,0.8), rgba(5,7,12,0.8)), url(img/Assignment\ 16.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+.as17{
+    background:linear-gradient(rgba(5,7,12,0.8), rgba(5,7,12,0.8)), url(img/Assignment\ 17.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+.as18{
+    background:linear-gradient(rgba(5,7,12,0.8), rgba(5,7,12,0.8)), url(img/Assignment\ 18.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
 .caratula{
     width: 100%;
     text-align: center;
