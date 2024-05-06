@@ -51,94 +51,98 @@
     <div class="main-container">
         
         <div class="parrafo">
-            <br />
-            
             <h1><strong>Welcome to Week 13</strong></h1>
-            <h3><strong>Embedded Networking and Communications</strong></h3>
+        <h3><strong>Embedded Networking and Communications</strong></h3>
 
-            <p>
-                Hey! now we will learn about Embedded Networking and Communications, for this week we have the following group and individual assignments:
-            </p>
+        <p>
+            Hey! now we will learn about Embedded Networking and Communications, for this week we have the following group and individual assignments:
+        </p>
 
-            <ul>
-                <li>Group assignment:</li>
-                    <p>o	Send a message between two projects/p>
-                    <p>o	Document your work to the group work page and reflect on your individual page what you learned</p>
-                   
-                <li>Individual assignment:</li>
-                    <p>o	Design, build and connect wired or wireless node(s) with network or bus addresses and a local interface.</p>
-            </ul>
-            <h2>GROUP ASSIGNMENT</h2>
-           
-           <p>For the group assignment we will begin by sending information from one Seed Xiao rp2040 shield to another, for this we will use our inserts developed in week 4.</p>
-           <img src="../assigments/img-13/img1.jpg" width="700" />
-           <p>We will use an ultrasound sensor, as well as a type of I2C communication, which will send information to the second shield and a small buzzer that will execute the function of emitting a sound every time the minimum programmed distance is exceeded.</p>
-            <p> <strong>Let's know a little about I2C communication….</strong></p>
-            <p>The I2C protocol, or Inter-Integrated Circuit, is a serial communication protocol used to connect multiple devices to a microcontroller.</p>
-            <p>The operation of I2C is based on Primary-Secondary (master-slave) communication. The microcontroller acts as a master, controlling data flow to attached secondary (slave) devices. Each secondary (slave) device has a unique address assigned, allowing the primary (master) to select which device it wishes to communicate with.</p>
-            <p>When I2C communication is initiated, the primary (master) sends a start signal, followed by the address of the secondary (slave) device it wishes to query. Then the data is transmitted, usually in bytes, between the primary (master) and the secondary (slave). The primary (master) generates clock signals to synchronize the transmission.</p>
-            <img src="../assigments/img-13/img2.jpg" width="700" />
-            <p>In the shields that we will use this I2C connection we place them at the bottom, for the Primary plate, the bus address is not mandatory. </p>
-            <p>Well let's start the master's programming</p>
-            <img src="../assigments/img-13/img3.png" width="700" />
-            <p>I will leave the code in .ino at the end of this assignment, having the master ready let's go about programming the slave</p>
-            <img src="../assigments/img-13/img4.png" width="700" />
-            <p>Great, we now have both codes, within this interaction and sending of messages we will manage a simple logic, the ultrasound will give us the readings and if it is less than 20cm it will give the order to emit a beep on the buzzer</p>
-            <p>Here we can see how both shields are connected through I2C and each one with its elements already described above.</p>
-            <img src="../assigments/img-13/img5.jpg" width="700" />
-            <p>We upload the programming to both shields and observe how the readings occur whether sent or received.</p>
-            <img src="../assigments/img-13/img6.png" width="700" />
-            <p>Here I will leave you a small video about how this exercise works….</p>
-            <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/KyrIO-R8LTs?si=ncP6uGx_JmDeoUlt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            <p>There are various methods of connection and interaction between shields, one of the most economical because you only have to have cables is the I2C, we also have a connection by Bluetooth and by network, I will leave you with all the necessary files so that you can also experiment with this type of communication and generate communication networks between slaves and master</p>
-            <p>Well now let's start with the individual assignment, I'm sure we will come up with something great</p>
-            
-            <h2>INDIVIDUAL ASSIGNMENT</h2>
-            <p>For my individual order, I plan to make a lamp that can be controlled through a Wi-Fi network. For this, I will use an already designed STL and make modifications to it to be able to place my control and power supply system. Here is the reference  <a href="https://www.thingiverse.com/thing:3066439">link</a></p>
-            <p>Let's pass the pieces to the priest so we can start printing</p>
+        <ul>
+            <li>Group assignment:</li>
+                <p>o	Send a message between two projects - ✅ Done</p>
+                <p>o	Document your work to the group work page and reflect on your individual page what you learned - ✅ Done</p>
+               
+            <li>Individual assignment:</li>
+                <p>o	Design, build and connect wired or wireless node(s) with network or bus addresses and a local interface. - ✅ Done</p>
+        </ul>
+        <h2>GROUP ASSIGNMENT</h2>
+       
+       <p>For the group assignment we will begin by sending information from one Seed Xiao rp2040 shield to another, for this we will use our inserts developed in week 4.</p>
+       <img src="../assigments/img-13/img1.jpg" width="700" />
+       <p>We will use an ultrasound sensor, as well as a type of I2C communication, which will send information to the second shield and a small buzzer that will execute the function of emitting a sound every time the minimum programmed distance is exceeded.</p>
+        <p> <strong>Let's know a little about I2C communication….</strong></p>
+        <p>The I2C protocol, or Inter-Integrated Circuit, is a serial communication protocol used to connect multiple devices to a microcontroller.</p>
+        <p>The operation of I2C is based on Primary-Secondary (master-slave) communication. The microcontroller acts as a master, controlling data flow to attached secondary (slave) devices. Each secondary (slave) device has a unique address assigned, allowing the primary (master) to select which device it wishes to communicate with.</p>
+        <p>When I2C communication is initiated, the primary (master) sends a start signal, followed by the address of the secondary (slave) device it wishes to query. Then the data is transmitted, usually in bytes, between the primary (master) and the secondary (slave). The primary (master) generates clock signals to synchronize the transmission.</p>
+        <img src="../assigments/img-13/img2.jpg" width="700" />
+        <p>In the shields that we will use this I2C connection we place them at the bottom, for the Primary plate, the bus address is not mandatory. </p>
+        <p>Well let's start the master's programming</p>
+        <img src="../assigments/img-13/img3.png" width="700" />
+        <p>I will leave the code in .ino at the end of this assignment, having the master ready let's go about programming the slave</p>
+        <img src="../assigments/img-13/img4.png" width="700" />
+        <p>Great, we now have both codes, within this interaction and sending of messages we will manage a simple logic, the ultrasound will give us the readings and if it is less than 20cm it will give the order to emit a beep on the buzzer</p>
+        <p>Here we can see how both shields are connected through I2C and each one with its elements already described above.</p>
+        <img src="../assigments/img-13/img5.jpg" width="700" />
+        <p>We upload the programming to both shields and observe how the readings occur whether sent or received.</p>
+        <img src="../assigments/img-13/img6.png" width="700" />
+        <p>Here I will leave you a small video about how this exercise works….</p>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/KyrIO-R8LTs?si=ncP6uGx_JmDeoUlt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <p>There are various methods of connection and interaction between shields, one of the most economical because you only have to have cables is the I2C, we also have a connection by Bluetooth and by network, I will leave you with all the necessary files so that you can also experiment with this type of communication and generate communication networks between slaves and master</p>
+        <p>Well now let's start with the individual assignment, I'm sure we will come up with something great</p>
+        
+        <h2>INDIVIDUAL ASSIGNMENT</h2>
+        <p>For my individual order, I plan to make a lamp that can be controlled through a Wi-Fi network. For this, I will use an already designed STL and make modifications to it to be able to place my control and power supply system. Here is the reference  <a href="https://www.thingiverse.com/thing:3066439">link</a></p>
+        <p>Let's pass the pieces to the priest so we can start printing</p>
 
-            <img src="../assigments/img-13/img7.png" width="700" />
-            <p>And.... let's start with the impression!</p>
-            <img src="../assigments/img-13/img8.jpg" width="700" />
-            <p>Well now I will make a simple design of a box to have the control system and the power supply there, We will use a simple to use web program in which you enter the measurements and it automatically generates the plans of the box.0</p>
-            <img src="../assigments/img-13/img9.png" width="700" />
-            <p>Here I leave you the link so you can experiment, now we will make some fittings for the switches and let's cut!</p>
-            <img src="../assigments/img-13/img10.png" width="700" />
-            <p>We now have the cuts ready, we will assemble the control box</p>
-            <img src="../assigments/img-13/img11.jpg" width="700" />
-            <p>Having the impressions, we proceed to assemble and place the LED strip</p>
-            <img src="../assigments/img-13/img12.jpg" width="700" />
-            <p>Well now let's make the connections with our control box</p>
-            <img src="../assigments/img-13/img13.jpg" width="700" />
-            <p>Let's start with the programming, we will use the Arduino IDE to establish a connection with the Esp32</p>
-            <img src="../assigments/img-13/img14.jpg" width="700" />
-            <p>We create the website, in HTML to generate the local interface through a wireless connection</p>
-            <img src="../assigments/img-13/img15.jpg" width="700" />
-            <p>In order to upload it to the esp32 we will have to compress the website for which we will use a compression program, I leave it  <a href="https://kangax.github.io/html-minifier/ ">here</a></p>
-            <img src="../assigments/img-13/img16.jpg" width="700" />
-            <p>As you can see, an optimization of 18% was achieved, Well now we load the esp32..</p>
-            <img src="../assigments/img-13/img17.jpg" width="700" />
-            <p>When loading it, it gives us the IP of the server: 192.168.164.214 , We enter the IP from the mobile and confirm the correct display of the interface.</p>
-            <img src="../assigments/img-13/img18.jpg" width="700" />
-            <p>Well, now let's program the LED to turn on according to the interface and let's start the tests.</p>
-            <img src="../assigments/img-13/img19.png" width="700" />
-            <p>Here in data.h we configure the network to which we want it to connect and place the compressed website so that it starts every time the esp32 is turned on</p>
-            <img src="../assigments/img-13/img20.png" width="700" />
-            <p>In the general sketch we declare the variables, we also configure the program's response to each signal that the page sends us, such as on, off and changing colors.</p>
-            <p>Well, we have everything ready, here is a video of how it works…….</p>
-            <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/SmOPLlRP5tY?si=2VC0qzHgQuFGfVRP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            <p>It turned out great, I leave all the files of this adventure here so you can replicate it.</p>
-            <li>
-                <a class="button-download" target="_blank" href="./Archivos (13).zip">
-                    Download Here
-                </a>
-            </li>
-            
-            <p>See you next Week.</p>
+        <img src="../assigments/img-13/img7.png" width="700" />
+        <p>And.... let's start with the impression!</p>
+        <img src="../assigments/img-13/img8.jpg" width="700" />
+        <p>Well now I will make a simple design of a box to have the control system and the power supply there, We will use a simple to use web program in which you enter the measurements and it automatically generates the plans of the box.0</p>
+        <img src="../assigments/img-13/img9.png" width="700" />
+        <p>Here I leave you the link so you can experiment, now we will make some fittings for the switches and let's cut!</p>
+        <img src="../assigments/img-13/img10.png" width="700" />
+        <p>We now have the cuts ready, we will assemble the control box</p>
+        <img src="../assigments/img-13/img11.jpg" width="700" />
+        <p>Having the impressions, we proceed to assemble and place the LED strip</p>
+        <img src="../assigments/img-13/img12.jpg" width="700" />
+        <p>Well now let's make the connections with our control box</p>
+        <img src="../assigments/img-13/img13.jpg" width="700" />
+        <p>Let's start with the programming, we will use the Arduino IDE to establish a connection with the Esp32</p>
+        <img src="../assigments/img-13/img14.jpg" width="700" />
+        <p>We create the website, in HTML to generate the local interface through a wireless connection</p>
+        <img src="../assigments/img-13/img15.jpg" width="700" />
+        <p>In order to upload it to the esp32 we will have to compress the website for which we will use a compression program, I leave it  <a href="https://kangax.github.io/html-minifier/ ">here</a></p>
+        <img src="../assigments/img-13/img16.jpg" width="700" />
+        <p>As you can see, an optimization of 18% was achieved, Well now we load the esp32..</p>
+        <img src="../assigments/img-13/img17.jpg" width="700" />
+        <p>When loading it, it gives us the IP of the server: 192.168.164.214 , We enter the IP from the mobile and confirm the correct display of the interface.</p>
+        <img src="../assigments/img-13/img18.jpg" width="700" />
+        <p>Well, now let's program the LED to turn on according to the interface and let's start the tests.</p>
+        <img src="../assigments/img-13/img19.png" width="700" />
+        <p>Here in data.h we configure the network to which we want it to connect and place the compressed website so that it starts every time the esp32 is turned on</p>
+        <img src="../assigments/img-13/img20.png" width="700" />
+        <p>In the general sketch we declare the variables, we also configure the program's response to each signal that the page sends us, such as on, off and changing colors.</p>
+        <p>Well, we have everything ready, here is a video of how it works…….</p>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/SmOPLlRP5tY?si=2VC0qzHgQuFGfVRP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <p>It turned out great, I leave all the files of this adventure here so you can replicate it.</p>
+        <li>
+            <a class="button-download" target="_blank" href="./Archivos (13).zip">
+                Download Here
+            </a>
+        </li>
+
+        <h3><strong>Learning</strong></h3>
+            <p>Well we finished the assignment and we definitely did not take away important learnings:</p>
+                
+                   <p>o   L1 </p>
+                   <p>o   L2 </p>
+        <p>See you next Week.</p>
+
         
         </div>
     </div>

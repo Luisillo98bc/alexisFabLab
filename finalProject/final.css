@@ -113,14 +113,14 @@ th {
     text-align: left;
     width: 90%;
     margin: 20px 50px;
-    line-height: 35px;
+  
     
     
     
 }
 
 .video{
-    text-align: left;
+    display: flex;
     width: 100%;
     height: auto;
     margin-top: 20px;
@@ -128,7 +128,7 @@ th {
 }
 
 iframe{
-    width: 53%;
+    width: 60%;
 }
 .button-download {
     color: yellow;

@@ -14,7 +14,7 @@
 
 
  table {
-    width: auto;
+    width: 100%;
     border-collapse: collapse;
 }
 th, td {
@@ -84,7 +84,7 @@ th {
     background-size:cover;
     
 }
-.as4{
+.as5{
     background:linear-gradient(rgba(5,7,12,0.8), rgba(5,7,12,0.8)), url(img/Assignment\ 5.jpeg);
     background-position: center;
     background-repeat: no-repeat;
@@ -147,7 +147,7 @@ th {
     background-size:cover;
     
 }
-.as13{
+.as14{
     background:linear-gradient(rgba(5,7,12,0.8), rgba(5,7,12,0.8)), url(img/Assignment\ 14.jpeg);
     background-position: center;
     background-repeat: no-repeat;
@@ -279,7 +279,7 @@ th {
     text-align: left;
     width: 90%;
     margin: 20px 50px;
-    line-height: 35px;
+   
     
     
     
@@ -296,7 +296,7 @@ th {
 
 iframe{
     
-    margin: auto;
+    width: 60%;
 }
 
 

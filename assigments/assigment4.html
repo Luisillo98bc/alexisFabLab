@@ -30,244 +30,229 @@
         </div>  
         
     </header>
-
-    
-    <section class="encabezado as4">
+    <section class="encabezado as6">
       <div class="caratula">
-        <div class="container-navigation-button">
-          <span class="btn-go" onclick="window.location.href='assigment3.html'">
-              Previous week
-          </span>
-      
-          <span class="btn-go" onclick="window.location.href='assigment5.html'">
-              Next week
-          </span>
-      </div>
-            
+          <div class="container-navigation-button">
+              <span class="btn-go" onclick="window.location.href='assigment3.html'">
+                  Previous week
+              </span>
+          
+              <span class="btn-go" onclick="window.location.href='assigment5.html'">
+                  Next week
+              </span>
+          </div>
+           
           <h1>WEEK 4</h1>
-          <h2>Electronics Design</h2>
+          <h2>Embedded programming</h2>
       </div>
-  </section>
+    </section>
     
     <div class="main-container">
         
-        <div class="parrafo">
-        
-          <h1><strong>Welcome to Week 4</strong></h1>
-          <h3><strong>Electronics Design</strong></h3>
-          <p>Hello! this time, let’s learn about Electronics Design.</p>
-          <p>
-            The milling machine we have at Continental University is the MONOFAB
-            SRM-20 that we will use for this week's work. Below are some
-            specifications of the machine:
-          </p>
+      <div class="parrafo">
 
-          <p>
-            Before starting to cut the test we have to start with the
-            preparation of the cutting area. Therefore, first we place the
-            double contact tape on a small board so as not to work on the base
-            of the machine, which is made of metal and can damage the cutters.
-          </p>
-       
+        <h1><strong>Welcome to Week 4</strong></h1>
+        <h3><strong>Embedded programming</strong></h3>
+
+        <p>Hello! this time, let’s learn about Embedded programming, for this week we have the following group and individual assignments:</p>
+
+        <ul>
+          <li>Group assignment:</li>
+              <p>o	Browse through the datasheet for your microcontroller. - ✅ Done</p>
+              <p>o	Compare the performance and development workflows for other architectures. - ✅ Done</p>
+              <p>o	Document your work to the group work page and reflect on your individual page what you learned - ✅ Done</p>
+          <li>Individual assignment:</li>
+              <p>o	Write a program for a microcontroller development board to interact (with local input &/or output devices) and communicate (with remote wired or wireless devices) - ✅ Done</p>
+        </ul>
+
+        <h2> GROUP ASSIGNMENT </h2>
+
+        <p>Greetings! Today, we'll delve into embedded programming, focusing on exploring the Seeeduino XIAO RP2040 microcontroller. Let's get started!</p>
+        <p>For the FAB ACADEMY 2024, we were advised to use the SEEED STUDIO XIAO RP2040, which will assist us in executing all our task programming as well as our final project. It's a highly potent microcontroller known for its versatility, enabling us to program effectively due to its outstanding features.</p>
+     
+        <h3><strong>Seeeduino XIAO RP2040:</strong></h3>
+        <p>The Seeed XIAO RP2040 is a powerful microcontroller known for its versatility and features. Some of its key features include:</p>
         <div class="table-container">
           <table>
             <tr>
-              <th>WORK SURFACE</th>
-              <th>232.2 x 156.6 mm</th>
+              <th>Small Form Factor</th>
+              <th>The XIAO RP2040 comes in a compact form factor, making it suitable for projects with space constraints or wearable applications</th>
             </tr>
             <tr>
-              <td>OPERATING SPEED</td>
-              <td>6 mm/min to 1.800 mm/min</td>
+              <td>USB Connectivity</td>
+              <td>The microcontroller includes USB connectivity for programming and data transfer, enabling easy integration with computers and other devices.</td>
             </tr>
             <tr>
-              <td>POWER CONSUMPTION</td>
-              <td>50 w</td>
+              <td>Programmability</td>
+              <td>It can be programmed using the Arduino IDE, MicroPython, or CircuitPython, providing flexibility and ease of development.</td>
             </tr>
             <tr>
-              <td>SPINDLE ROTATION SPEED</td>
-              <td>3.000 RPM to 7.000 RPM</td>
+              <td>Low Power Consumption</td>
+              <td>The RP2040 chip is designed for low power consumption, making it suitable for battery-powered applications.</td>
+            </tr>
+            <tr>
+              <td>Integrated Peripherals</td>
+              <td>It features integrated peripherals such as SPI, I2C, UART, PWM, and ADC, expanding its capabilities for various projects</td>
+            </tr>
+            <tr>
+              <td>Affordablen</td>
+              <td>The XIAO RP2040 is relatively affordable compared to other microcontrollers with similar capabilities, making it accessible to hobbyists, students, and professionals alike</td>
             </tr>
           </table>
-          <div>
-            <img src="img_4/Assig4-1.jpg" /><br />
-          </div>
+        </div>
           
-        </div>
+        
+        <img src="img_6/Assig6-1.png" width="200" height="200"/><br />
+        
+        <p>These features make the Seeed XIAO RP2040 a popular choice for a wide range of embedded projects and applications.</p>
+        <p>The simplified pinout for the Seeed Studio XIAO RP2040 microcontroller is:</p>
+        <ul>
+          <li>3V3: 3.3V power output</li>
+          <li>Earth Earth</li>
+          <li>A0-A7: analog input pins</li>
+
+          <li>D0-D23: Digital I/O Pins</li>
+          <li>TX, RX: UART communication pins</li>
+          <li>SCL, SDA: I2C communication pins</li>
+          <li>SCK, MISO, MOSI, SS: SPI communication pins</li>
+          <li>DAC0, DAC1: digital-to-analog converter output pins</li>
+          <li>PWM0-PWM6: pulse width modulation pins</li>
+          <li>USB: USB communication and power input</li>
+          <li>VBUS, VBAT: battery input pins</li>
+          <li>SWDIO, SWCLK: serial cable debugging pins.</li>
+        </ul>
+        <img src="img_6/Assig6-2.png" width="700" /><br />
         <br>
-        <br>
-        <p>
-          Before starting to cut the test we have to start with the preparation
-          of the cutting area. Therefore, first we place the double contact tape
-          on a small board so as not to work on the base of the machine, which
-          is made of metal and can damage the cutters.
-        </p>
-        <img src="img_4/Assig4-2.jpg" width="700" /><br />
-        <img src="img_4/Assig4-3.jpg" width="700" /><br />
-        <p>
-          After you have successfully glued the circuit board. We begin to
-          configure the X, Y and Z axes of the MONOFAB. To do this, we first
-          start by configuring the X and Y axes where we want to start working.
-          When configuring the Z axis we have to be careful because we can break
-          the milling cutter if we don't do it right.
-        </p>
-        <img src="img_4/Assig4-4.jpg" width="700" /><br />
-        <p>
-          After obtaining the correct location of the X, Y and Z axes, we click
-          on SET ORIGIN since it will be the new origin of the machine and it
-          can begin cutting. That is where all the values will change to 0.00 mm
-          and we would have the machine ready to start working.
-        </p>
-        <img src="img_4/Assig4-25.jpg" width="700" /><br />
-        <img src="img_4/Assig4-5.jpg" width="700" /><br />
-        <p>
-          We will start with the line test, where we will carry out the
-          procedure, first we will do the milling and then the cutting. For this
-          first step we have to open the virtual program MODS PROJECT, which is
-          the program we use before moving to the machine program.
-        </p>
-        <img src="img_4/Assig4-6.png" width="700" /><br />
-        <img src="img_4/Assig4-7.png" width="700" /><br />
-        <p>
-          The first thing you should make sure is that the bur is not worn out,
-          the result is obviously not good, when I saw this, I ordered a new
-          bur, and with this new bur I did a new test
-        </p>
-        <img src="img_4/Assig4-8.png" width="700" /><br />
-        <p>
-          We can see that we have a good result and a precise cut starting from
-          0.006” which is equivalent to 0.152mm, and a separation of 0.02” which
-          is equivalent to 0.508mm, approximately, the objective that was
-          requested of us for the group work. We understood the processes,
-          configurations and were able to obtain our board test.
-        </p>
-        <p>NOW, LET'S DO IT!</p>
-        <p>
-          I decided to use EasyEDA due to some not so technical factors, to
-          begin with I was used to using Proteus, but it is not a software that
-          Fab Academy considers in its resources (if you want to review the Fab
-          Academy information I leave the link here), but I did find EasyEDA on
-          the list and I had heard of it before, and it is also used in my
-          university, besides that it is an online editor, and I did not want to
-          struggle with any software to install, the sum of these factors made
-          me decide to explore and use it.
-        </p>
-        <img src="img_4/Assig4-9.png" width="700" /><br />
-        <p>With patience we can form our circuits.</p>
-        <p>
-          Remember: the width of the trace on our PCB depends on the current
-          that will be stopped, for 0.5mA we can use 0.3mm or 0.012” approx.
-          Calculate this value with the PCB Trace Width Calculator, our machine can perform this job
-          without problems since the minimum we can ask for is 0.006”.
-        </p>
-        <img src="img_4/Assig4-10.png" width="700" /><br />
+        <h3>Conclusions</h3>
+        <p>The Seeed Studio XIAO RP2040 is a versatile and powerful microcontroller that offers numerous features and capabilities. Its compact form factor, combined with the RP2040 microcontroller's dual-core ARM Cortex-M0+ processor, makes it suitable for a wide range of embedded projects and applications.</p>
+        <p>One of the key strengths of the XIAO RP2040 is its flexibility in programming, as it can be programmed using various development environments such as Arduino IDE, MicroPython, or CircuitPython. This flexibility makes it accessible to both beginners and experienced developers.</p>
+        <p>The XIAO RP2040 also offers a rich set of integrated peripherals, including GPIO pins, USB connectivity, analog inputs, UART, SPI, I2C, PWM, and DAC outputs, providing ample options for interfacing with sensors, actuators, and other external components.</p>
+        <p>Moreover, its low power consumption and affordability further enhance its appeal for projects requiring battery-powered operation or budget constraints.</p>
+        <p>In conclusion, the Seeed Studio XIAO RP2040 microcontroller stands out as a reliable and versatile choice for makers, hobbyists, students, and professionals looking to develop innovative embedded systems and IoT applications.</p>
+        <p>We already know about the SEEED XIAO RP2040, now let's start doing some programming exercises, let's get to work.</p>
+        <img src="img_6/Assig6-3.png" width="700" /><br />
+        <img src="img_6/Assig6-4.png" width="700" /><br />
+        <p>This is part of my circuit from my previously manufactured seeed xiao shield, place an LED on my shield, which is connected to pin D6. This is the one we will use for the first programming exercise.</p>
+        <p>Prior to uploading the code, we need to establish communication between our microcontroller and our PC. To do so, we should follow these steps:</p>
+        <p>  1. Visit the Seeed Studio webpage.</p>
+        <p>  2. Install the Seeeduino libraries for Raspberry Pi Pico/RP2040.</p>
+        <p>The information available on the Seeed Studio webpage is comprehensive and detailed. However, for clarity and convenience, I will provide a summary of the installation steps. (It's always advisable to maintain clear information by attributing authorship and the information source.)</p>
+        <p>Once the library is installed, we can proceed to program our Seeed XIAO.</p>
+        <img src="img_6/Assig6-5.png" width="700" /><br />
+        <p>I made a code to test our Seeed XIAO:</p>
 
-        <p>
-          Once the circuit is completed we have to design the PCB, for that we
-          have the following option.
-        </p>
-        <img src="img_4/Assig4-11.png" width="700" /><br />
-        <p>
-          Here we will be shown the components that we use, and we must position
-          and connect them.
-        </p>
-        <img src="img_4/Assig4-12.png" width="700" /><br />
-        <p>Well, now we are going to export our design.</p>
-        <p>Let's file and then export,</p>
-        <p>
-          We select the layers that we want to export, in my case the top layer,
-          when clicking on export a file will be downloaded (in my case SVG)
-        </p>
-        <img src="img_4/Assig4-13.png" width="700" /><br />
-        <img src="img_4/Assig4-14.png" width="700" /><br />
-        <p>
-          We take that file to MODS PROJECT and then we generate the file for
-          CNC milling.
-        </p>
-        <img src="img_4/Assig4-15.png" width="700" /><br />
-        <img src="img_4/Assig4-16.png" width="700" /><br />
-        <p>In the program we can preview how the plate will look.</p>
+        <pre class="language">
+          <code>
+            int LED = D6;
+        void setup() {
+          
+          pinMode(LED, OUTPUT);
+        }
 
-        <img src="img_4/Assig4-17.png" width="700" /><br />
-        <p>Now we will pass it to the machine program</p>
+        void loop() {
+          digitalWrite(LED, HIGH);  
+          delay(1000);                   
+          digitalWrite(LED, LOW);  
+          delay(1000);                    
+        }
 
-        <img src="img_4/Assig4-18.png" width="700" /><br />
-        <p>
-          We place the plate on the base and do the calibration procedure in the
-          3 axes.
-        </p>
-        <img src="img_4/Assig4-19.jpg" width="700" /><br />
-        <p>
-          The spawning process can be seen in the following video, at the end we
-          will obtain the final result.
-        </p>
-        <!--VIDEO YT: Link: https://youtu.be/PTBTN4dLIq4  -->
+          </code>
+        </pre>
+        <p>We can see that the LED of pin D6 is FLASHING as per the data mentioned in the program.</p>
         <div class="video">
-          <iframe
-            width="640"
-            height="360"
-            src="https://www.youtube.com/embed/PTBTN4dLIq4"
-            title="Fab Academy 2024 - Electronics Production"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
+          <iframe width="640" height="360" src="https://www.youtube.com/embed/Ij2VlWkt-Ow" title="Fab Academy - Blink Led" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>   
         </div>
-        <img src="img_4/Assig4-20.jpg" width="700" /><br />
-        <p>We vacuum and remove the plaque:</p>
-        <img src="img_4/Assig4-21.jpg" width="700" /><br />
-        <p>
-          After obtaining the microcontroller board, we proceed to solder all
-          the parts it needs for its operation.
-        </p>
-        <img src="img_4/Assig4-22.jpg" width="700" /><br />
+        <p>It was great but it was simple, let's go up a little bit this time let's do some programming but getting readings for it we will use an ultrasound sensor. </p>
+        <img src="img_6/Assig6-6.png" width="700" /><br />
+        <p>I made a code to test our Seeed XIAO:</p>
+        <pre class="language">
+          <code>
+            const int trigPin = D0; // Output pin of the ultrasonic sensor 
+          const int echoPin = D1; // Input pin of the ultrasonic sensor
+          long duration;
+          int distance;
 
-        <p>
-          And We start!! Remember! In this process we must be careful not to
-          damage the tracks of the plate.
-        </p>
-        <img src="img_4/Assig4-23.jpg" width="700" /><br />
-        <p>
-          Finally, we have the microcontroller ready, now we move on to
-          programming it.
-        </p>
-        <img src="img_4/Assig4-24.jpg" width="700" /><br />
-        <p>
-          We upload a test base programming code, through the Arduino program:
-        </p>
-        <!--VIDEO YT: Link: https://youtu.be/otFLaVEDWV8   -->
-        <div class = "video">
-          <iframe
-            width="640"
-            height="360"
-            src="https://www.youtube.com/embed/otFLaVEDWV8"
-            title="Fab Academy 2024 - Electronic Design Seed Xiao"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
-        </div>
-        <!--CODE: int led= D6;
-            void setup() {
+          void setup() {
             
-            pinMode(led, OUTPUT);
+            pinMode(trigPin, OUTPUT);
+            pinMode(echoPin, INPUT);
+
+            Serial.begin(9600);
+            } 
+          
+          void loop() {
+
+            digitalWrite(trigPin, LOW); 
+            delayMicroseconds(2); 
+            digitalWrite(trigPin, HIGH);
+            delayMicroseconds(10);
+            digitalWrite(trigPin, LOW);
+
+            duration = pulseIn(echoPin, HIGH);
+            distance = duration * 0.034 / 2;
+            Serial.print("Distance: "); 
+            Serial.print(distance);
+            Serial.println(" cm");
+            delay(1000); 
+            
             }
 
-            void loop() {
-            digitalWrite(led, HIGH); 
-            delay(1000);                      
-            digitalWrite(led, LOW);   
-            delay(1000);                      
-            }
-        -->
-        <li>
-          <a class="button-download" target="_blank" href="../files/sem4.zip">
-          Download Here
-        </a>
-      </li>
-        <p>That`s All my friends, see you later.</p>
-    </div>
+
+          </code>
+        </pre>
+        <div class="video">
+          <iframe width="700" height="360" src="https://www.youtube.com/embed/4WISa1cx7GM" title="Fab Academy 2024 - Ultrasound Sensor" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>      
+        </div>
+        <p>It was good, we learned to obtain distance readings through this sensor, it is time to draw power through our shield and apply the output with a servomotor.</p>
+        <img src="img_6/Assig6-7.jpg" width="700" /><br />
+        <img src="img_6/Assig6-8.png" width="700" /><br />
+        <p>
+          I made a code to test our Seeed XIAO:
+        </p>
+        <pre class="language">
+          <code>
+            #include <Servo.h>
+            #include <servo.pio.h>
+              Servo myServo; 
+              
+              const int servoPin = D1;
+              
+              void setup() {
+              
+                myServo.attach(servoPin);
+              
+              }
+              
+              void loop() {
+              
+                for (int angle = 0; angle <= 180; angle += 1){ 
+                  myServo.write(angle); delay(15);
+                }
+              
+                delay(1000);
+              
+                for (int angle = 180; angle >= 0; angle -= 1) { 
+                  myServo.write(angle); delay(15); 
+                  } 
+                  delay(1000); // Wait for a second } 
+              
+          </code>
+        </pre>
+        <div class="video">
+          <iframe width="700" height="360" src="https://www.youtube.com/embed/1THfsH0DdBg" title="Fab Academy 2024 - Servo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
+        </div>
+
+        <h3><strong>Learning</strong></h3>
+        <p>Well we finished the assignment and we definitely did not take away important learnings:</p>
+            
+                <p>o   L1 </p>
+                <p>o   L2 </p>
+       
+          <p>That`s All my friends, see you later.</p>
+          <p>See you next week. </p>
 
       </div>
+    
     </div>
 
     <footer class="anuncios">
@@ -320,4 +305,3 @@
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
- 
