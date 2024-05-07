@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagen en toda la pantalla</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .full-screen-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9); /* Fondo oscuro semi-transparente */
+            display: none; /* Oculta la imagen por defecto */
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .full-screen-image img {
+            max-width: 90%;
+            max-height: 90%;
+            cursor: pointer;
+            object-fit: contain; /* Ajusta la imagen para que quepa en el contenedor */
+        }
+    </style>
+</head>
+<body>
+    <img src="./img/imagen2.jpg" alt="Imagen" class="clickable-image">
+    <div class="full-screen-image">
+        <img src="./img/imagen4.jpg" alt="Imagen en pantalla completa">
+    </div>
+
+    <script>
+        const clickableImage = document.querySelector('.clickable-image');
+        const fullScreenImage = document.querySelector('.full-screen-image');
+        const fullScreenImg = document.querySelector('.full-screen-image img');
+
+        clickableImage.addEventListener('click', () => {
+            const imageUrl = clickableImage.src;
+            fullScreenImg.src = imageUrl;
+            fullScreenImage.style.display = 'flex'; // Muestra la imagen en pantalla completa
+        });
+
+        fullScreenImage.addEventListener('click', () => {
+            fullScreenImage.style.display = 'none'; // Oculta la imagen en pantalla completa al hacer clic en ella
+        });
+    </script>
+</body>
+</html>
