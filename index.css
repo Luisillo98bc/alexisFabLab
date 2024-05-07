@@ -159,7 +159,7 @@ ion-icon{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #E8E8E8;
+    /*background-color: #E8E8E8;*/
 }
 #separador1 .division{
     display: flex;
@@ -175,20 +175,21 @@ ion-icon{
     color: var(--color-parrafo);
     text-align: center;
 }
-
-
 .portafolio{
     /*background-color: #E8E8E8;*/
     box-sizing: border-box;
     width: 100%;
-    background-color: #E8E8E8;
-    padding: 50px 350px;
+    background-color: var(--color-1);
+    padding: 50px 330px;
     height: auto;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); /* Columnas autoajustables */
-    grid-gap: 15px; /* Espacio entre celdas */
+    grid-gap: 30px; /* Espacio entre celdas */
     
 }
+
+
+
 
 .portafolio .post{
     background-color: #FFFFFF;
@@ -200,7 +201,7 @@ ion-icon{
 }
 .portafolio .post:hover{
     /*box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.9);*/
-    box-shadow: 0px 0px 10px  rgba(0, 0, 0, 0.8);
+    box-shadow: 2px 2px 10px 2px rgba(249, 249, 249, 0.982);
 }
 .portafolio .post .contenedor-imagenes{
     display: flex;
@@ -320,18 +321,7 @@ ion-icon{
     background-color: #070e15;
     
 }
-.portafolio{
-    /*background-color: #E8E8E8;*/
-    box-sizing: border-box;
-    width: 100%;
-    background-color: #E8E8E8;
-    padding: 50px 330px;
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); /* Columnas autoajustables */
-    grid-gap: 30px; /* Espacio entre celdas */
-    
-}
+
 
 @media (max-width: 1800px){
     .portafolio{

@@ -8,7 +8,9 @@
      --color-parrafo: black;
      --color-fondo: #dedbd2;
      --color-fondo2: #f2e9e4;
-     --color-portafolio: #212529;
+     /*--color-portafolio: #212529;*/
+     --color-portafolio: rgba(0, 0, 0, 0.919);
+     
    
  }
 
@@ -213,13 +215,13 @@ th {
 
 .parrafo{
     
-    background-color: var(--color);
+    background-color: var(--color-portafolio);
     padding: 20px 580px;
     height: auto;
   
 }
 .parrafo p {
-    color: var(--color-principal);
+    color: var(--color-secundario);
     text-align: justify;
     line-height: 30px;
     padding: 8px 20px;
@@ -238,7 +240,7 @@ th {
     
 }
 .parrafo h1 {
-    color: var(--color-principal);
+    color: var(--color-secundario);
     text-align: left;
    
     line-height: 30px;
@@ -247,28 +249,28 @@ th {
     font-weight: bold;
 }
 .parrafo h2 {
-    color: var(--color-principal);
+    color: var(--color-secundario);
     text-align: left;
     line-height: 40px;
    
     font-weight: bold;
 }
 .parrafo h3 {
-    color: var(--color-principal);
+    color: var(--color-secundario);
     text-align: left;
     line-height: 30px;
    
     font-weight: bold;
 }
 .parrafo li {
-    color: var(--color-principal);
+    color: var(--color-secundario);
     text-align: left;
     font-size: 19px;
     line-height: 30px;
     
 }
 .parrafo h4 {
-    color: var(--color-principal);
+    color: var(--color-secundario);
     text-align: left;
     
     line-height: 35px;
@@ -337,6 +339,27 @@ iframe{
 .button-download:hover{
     background-color: var(--color-principal);
 }
+#btn-scroll-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--color-fondo2);
+    color:#f0ece4;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 100px;
+    transition: 0.2s;
+}
+#btn-scroll-top:hover{
+    transform: scale(1.1);
+    background-color: var(--color-secundario);
+    
+}
+
 
 @media (max-width: 1800px){
     .parrafo{
